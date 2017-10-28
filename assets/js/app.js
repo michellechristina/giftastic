@@ -33,9 +33,9 @@ function displayImageContent() {
             // Creating and storing an image tag
             var gifImage = $("<img>");
             gifImage.attr('src', still);
-            gifImage.attr('data.still', still);
-            gifImage.attr('data.animated', animated);
-            gifImage.attr("data.state", 'still');
+            gifImage.attr('data-still', still);
+            gifImage.attr('data-animated', animated);
+            gifImage.attr("data-state", 'still');
             gifImage.addClass('theImage');
             // Setting the src attribute of the image to a property pulled off the result item
             gifImage.attr("src", results[i].images.fixed_height.url);
@@ -60,9 +60,12 @@ function displayImageContent() {
         if (state === "still") {
           $(this).attr("src", $(this).attr("data-animated"));
           $(this).attr("data-state", "animated");
+
+          console.log($(this).attr("animated " +"data-animated"));
         } else {
           $(this).attr("src", $(this).attr("data-still"));
           $(this).attr("data-state", "still");
+          console.log($(this).attr("stil image " +"data-still"));
         }
       });
 
