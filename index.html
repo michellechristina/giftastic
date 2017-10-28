@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>National Parks Trivia</title>
+    <title>Monstrous Gif Search</title>
 
 
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
@@ -23,8 +23,9 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sancreek" rel="stylesheet">
 
 </head>
 </head>
@@ -32,7 +33,7 @@
 <body>
 
         <div class="container boxes">
-                <h1> Giftastic</h1>
+                <h1> Monstrous Gifs</h1>
             </div>
 
         <div class="container boxes" id="buttons">
@@ -40,16 +41,44 @@
         
         
             <div class="container boxes" id="searchDiv">
-                <form id="search">
-                    <label for="search-input">Add your search term!</label>
+                <!-- <form id="search">
+                    <label for="search-input">Add your element!</label>
                     <input type="text" id="search-input"><br>
-                    <input id="add-gif" type="submit" value="submit">
-        
-            </div>
-        
-            <div class="container boxes" id="gifContent">
+                    <input id="add-gif" type="submit" value="submit"> -->
 
+
+<!-- 
+                    <form class="form-inline" id="search">
+                        <div class="form-row align-items-center">
+                          <div class="col-auto">
+                            <label class="sr-only" for="search-input">Add A Monster</label>
+                            <input type="text" class="form-control mb-2 mb-sm-0" id="search-input" placeholder="Monster Goes Here">
+                          </div>
+                       
+        
+                          <div class="col-auto">
+                            <button type="submit" class="btn btn-primary" id="add-gif" value="submit">Submit</button>
+                          </div>
+                        </div>
+                      </form> -->
+
+
+                      <form class="form-inline" id="search">
+                        <div class="form-group">
+                          <!-- <label for="search-input">Add A Monster</label> -->
+                          <input type="text" class="form-control" id="search-input" placeholder="Add A Monster...">
+                        </div>
+                        <button type="submit" id="add-gif" class="btn btn-default">Submit</button>
+                      </form>
+        
             </div>
+
+        
+            
+                    <div id="gifContent">
+                    </div>
+
+        
             </div>
 
 
